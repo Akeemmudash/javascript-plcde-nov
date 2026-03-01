@@ -29,3 +29,11 @@ logUpdatedArr();
 
 // add an element 'w' to the end of the array
 // change the first element of the array to have the value of 'm'
+
+// Exercise
+// Checkout these array methods
+// slice
+// splice
+// concat
+// indexOf
+// includes

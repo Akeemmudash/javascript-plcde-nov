@@ -10,5 +10,5 @@
 
 const myArray = ["h", "e", "l", "l", "o"];
 //get the last index of the array
-// add an element w to the array
+// add an element w to the end of the array
 // change the first element of the array to have the value of 'm'

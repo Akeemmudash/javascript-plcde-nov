@@ -1,3 +1,5 @@
+// Exercise 1
+
 function authorize(role) {
   switch (role) {
     case "admin":
@@ -31,3 +33,12 @@ const person2 = createPerson("John Doe", "viewer", 5);
 const person3 = createPerson("Joseph Oluwaseun", "editor", 10);
 
 logEmployeeAccess(person3);
+logEmployeeAccess(employee1);
+logEmployeeAccess(employee2);
+
+// Exercise 9
+
+const stockInString = prompt("What is the stock number");
+const stock = parseInt(stockInString);
+const stockMessage = stock > 0 ? "In Stock" : "Out of stock";
+console.log(stockMessage);

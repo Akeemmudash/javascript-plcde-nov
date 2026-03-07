@@ -9,7 +9,7 @@
 // console.log(myArray[10]);
 
 function logUpdatedArr() {
-  console.log("myArray", myArray);
+  // console.log("myArray", myArray);
 }
 const myArray = ["h", "e", "l", "l", "o"];
 //get the last index of the array
@@ -19,12 +19,12 @@ logUpdatedArr();
 myArray[0] = "m";
 
 const lastElement = myArray.pop();
-console.log("lastElement", lastElement);
+// console.log("lastElement", lastElement);
 
 myArray.unshift("p");
 logUpdatedArr();
 const removedElement = myArray.shift();
-console.log("removedElement", removedElement);
+// console.log("removedElement", removedElement);
 logUpdatedArr();
 
 // add an element 'w' to the end of the array
@@ -37,3 +37,21 @@ logUpdatedArr();
 // concat
 // indexOf
 // includes
+
+// Saturday 7th, March
+
+function add(a = 4, b = 5) {
+  return a + b;
+}
+const myArray1 = [20, 10, 50, 100, 12, 52];
+const myArray2 = [22, 12, 52, 102, 14, 54];
+
+function divideArrayElByTwo(arrArg) {
+  for (let i = 0; i < arrArg.length; i++) {
+    arrArg[i] = arrArg[i] / 2;
+  }
+  return arrArg;
+}
+
+const result = divideArrayElByTwo(myArray1);
+console.log("result", result);

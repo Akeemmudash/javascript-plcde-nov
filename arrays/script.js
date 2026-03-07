@@ -40,18 +40,49 @@ logUpdatedArr();
 
 // Saturday 7th, March
 
+// for (let i = 0; i < myArray.length; i++) {
+//   console.log("Current Index", i);
+//   console.log(myArray[i]);
+//   console.log("------------------\n");
+// }
+
+const numbersArray = [20, 10, 50, 100, 12, 52];
+
+for (let i = 0; i < numbersArray.length; i++) {
+  numbersArray[i] = numbersArray[i] / 2;
+}
+
+function divideArrayElementByTwo(arrayArg) {
+  for (let i = 0; i < arrayArg.length; i++) {
+    arrayArg[i] = arrayArg[i] / 2;
+  }
+  return arrayArg;
+}
+
+function multiplyArrayElementByTwo(arrayArg) {}
+function subtractArrayElementByTwo(arrayArg) {}
+function addArrayElementByTwo(arrayArg) {}
+
+const array_divided = divideArrayElementByTwo([20, 44, 11, 2, 34]);
+console.log(array_divided);
+
 function add(a = 4, b = 5) {
   return a + b;
 }
+
+function subtract(a, b) {
+  return a - b;
+}
+add(10, 5);
 const myArray1 = [20, 10, 50, 100, 12, 52];
 const myArray2 = [22, 12, 52, 102, 14, 54];
 
-function divideArrayElByTwo(arrArg) {
+function operateArray(arrArg, operateFn) {
   for (let i = 0; i < arrArg.length; i++) {
-    arrArg[i] = arrArg[i] / 2;
+    arrArg[i] = operateFn(arrArg[i], 2);
   }
   return arrArg;
 }
 
-const result = divideArrayElByTwo(myArray1);
-console.log("result", result);
+const result = operateArray(myArray1, subtract);
+// console.log("result", result);

@@ -59,21 +59,36 @@ function divideArrayElementByTwo(arrayArg) {
   return arrayArg;
 }
 
-function multiplyArrayElementByTwo(arrayArg) {}
-function subtractArrayElementByTwo(arrayArg) {}
-function addArrayElementByTwo(arrayArg) {}
+function multiplyArrayElementByTwo(arrayArg) {
+  for (let i = 0; i < arrayArg.length; i++) {
+    arrayArg[i] = arrayArg[i] * 2;
+  }
+  return arrayArg;
+}
+function subtractArrayElementByTwo(arrayArg) {
+  for (let i = 0; i < arrayArg.length; i++) {
+    arrayArg[i] = arrayArg[i] - 2;
+  }
+  return arrayArg;
+}
+function addArrayElementByTwo(arrayArg) {
+  for (let i = 0; i < arrayArg.length; i++) {
+    arrayArg[i] = arrayArg[i] + 2;
+  }
+  return arrayArg;
+}
 
-const array_divided = divideArrayElementByTwo([20, 44, 11, 2, 34]);
-console.log(array_divided);
+// -------
+// =======
+// *******
 
 function add(a = 4, b = 5) {
   return a + b;
 }
-
 function subtract(a, b) {
   return a - b;
 }
-add(10, 5);
+
 const myArray1 = [20, 10, 50, 100, 12, 52];
 const myArray2 = [22, 12, 52, 102, 14, 54];
 
@@ -84,5 +99,18 @@ function operateArray(arrArg, operateFn) {
   return arrArg;
 }
 
-const result = operateArray(myArray1, subtract);
-// console.log("result", result);
+function multiply(a, b) {
+  return a * b;
+}
+function raiseToPower(a, b) {
+  return a ** b;
+}
+function returnStringedNumbers(a, b) {
+  return `${a} - ${b}`;
+}
+
+// console.log(operateArray(myArray2, returnStringedNumbers));
+
+// Create a function called identifyArgs, this function has a signature identifyArgs(a, b)
+// this function returns a template string which says "The first argument is ${a} and The second argument is ${b}"
+// for example if identifyArgs(20, 4) returns "The first argument is 20 and the second argument is 4"

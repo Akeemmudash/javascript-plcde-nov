@@ -93,10 +93,11 @@ const myArray1 = [20, 10, 50, 100, 12, 52];
 const myArray2 = [22, 12, 52, 102, 14, 54];
 
 function operateArray(arrArg, operateFn) {
+  const newArray = [];
   for (let i = 0; i < arrArg.length; i++) {
-    arrArg[i] = operateFn(arrArg[i], 2);
+    newArray.push(operateFn(arrArg[i], 2));
   }
-  return arrArg;
+  return newArray;
 }
 
 function multiply(a, b) {
@@ -109,8 +110,22 @@ function returnStringedNumbers(a, b) {
   return `${a} - ${b}`;
 }
 
-// console.log(operateArray(myArray2, returnStringedNumbers));
+console.log(operateArray(myArray2, returnStringedNumbers));
+["22 - 2", "12 - 2", "52 - 2", "102 - 2", "14 - 2", "54 - 2"];
 
 // Create a function called identifyArgs, this function has a signature identifyArgs(a, b)
 // this function returns a template string which says "The first argument is ${a} and The second argument is ${b}"
 // for example if identifyArgs(20, 4) returns "The first argument is 20 and the second argument is 4"
+
+// -----------------------------------
+// -----------------------------------
+// ------ ARRAY METHODS forEach, map, filter...
+// -----------------------------------
+// -----------------------------------
+// -----------------------------------
+
+const returnForEach = myArray1.forEach((value) => console.log(value * 2));
+console.log(returnForEach);
+
+const returnMap = myArray1.map((value) => value * 5);
+console.log(returnMap);

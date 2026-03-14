@@ -1,0 +1,8 @@
+.styled {
+  color: #fff;
+  background-color: orange;
+  font-weight: 900;
+  font-size: 28px;
+  border-radius: 10px;
+  padding: 8px 14px;
+}
